@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #00BFFF;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent.fcai21-1.fna.fbcdn.net/v/t1.0-9/125547133_2090689451062175_1553947171453113276_o.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=eqUwfwjsGoUAX-VyvuW&_nc_ht=scontent.fcai21-1.fna&oh=1fbd80b7c2b1ee585c3c2808134aeea1&oe=5FE088F9" alt="Eslam" style="width:100%">
+      <div class="container"style="margin-bottom: 100px">
+        <h2>Eslam Ahmed</h2>
+        <p class="title">CS</p>
+        <p>NU freshman.</p>
+        <p>es.ahmed@nu.edu.eg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.ibb.co/N7f0vLS/pp.jpg" alt="Hazem" style="width:100%">
+      <div class="container">
+        <h2>Hazem Khaled</h2>
+        <p class="title">CS</p>
+        <p>NU freshman.</p>
+        <p>h.salaheldin@nu.edu.eg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="column">
+    <div class="card">
+      <img src="https://scontent-hbe1-1.xx.fbcdn.net/v/t31.0-8/13244275_609435722555870_3690758792923355546_o.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=NmRBVM6TH_4AX_vWmph&_nc_ht=scontent-hbe1-1.xx&oh=1ec6b12a33d828ff7028a8eebbaaec5a&oe=5FE2AE91" alt="Ahmed" style="width:100%">
+      <div class="container">
+        <h2>Ahmed Atia</h2>
+        <p class="title">CS</p>
+        <p>NU freshman.</p>
+        <p>A.Atia@nu.edu.eg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://i.ibb.co/6X55BQm/83e2801f-9b53-490c-ac5b-9ed49897e234.jpg" alt="Mohamed" style="width:100%">
+      <div class="container">
+        <h2>Mohamed Essawy</h2>
+        <p class="title">CS</p>
+        <p>NU freshman.</p>
+        <p>M.Abdelmaged@nu.edu.eg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
